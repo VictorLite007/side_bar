@@ -1,0 +1,127 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    user-select: none;
+    font-family: 'Poppins', sans-serif;
+    color: #fff;
+    text-decoration: none;
+    transition: all 0.3s;
+}
+
+.sidebar{
+    position: fixed;
+    width: 250px;
+    height: 100%;
+    left: -250px;
+    background: #1b1b1b; 
+}
+
+.sidebar.active{
+    left: 0;
+}
+
+.text{
+    line-height: 65px;
+    text-align: center;
+    font-size: 25px;
+    letter-spacing: 1px;
+    background: #1e1e1e;
+    font-weight: 600;
+}
+
+nav ul {
+    background: #1b1b1b;
+    height: 100%;
+    width: 100%;
+    list-style: none;
+}
+
+nav ul li {
+    line-height: 60px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1)
+}
+
+nav ul li a {
+    font-size: 18px;
+    line-height: 60px;
+    padding-left: 40px;
+    display: block;
+    border-left: 3px solid transparent;
+    position: relative;
+    width: 100%;
+}
+
+nav ul li a:hover{
+    color: cyan;
+    background: #1e1e1e;
+    border-left: 3px solid cyan;
+
+}
+
+nav ul ul{
+    position: static;
+    display: none;
+}
+
+nav ul .feat-show.show{
+    display: block;
+}
+
+nav ul .serv-show.show1{
+    display: block;
+}
+
+nav ul ul li{
+    line-height: 42px;
+    border-bottom: none;
+}
+
+nav ul ul li a {
+    color: #e6e6e6;
+    font-size: 17px;
+    padding-left: 80px;
+}
+
+nav ul li a i {
+    position: absolute;
+    top: 50%;
+    right: 20px;
+    transform: translateY(-50%);
+    font-size: 12px;
+    transition: transform .4s;
+}
+
+nav ul li a i.rotate{
+    transform: translateY(-50%) rotate(180deg);
+    color: cyan;
+}
+
+.btn{
+    background: #1e1e1e;
+    width: 40px;
+    height: 40px;
+    font-size: 30px;
+    border-radius: 5px;
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: serif;
+}
+
+
+.btn.click{
+    left: 270px;
+    transform: rotate(-180deg   );
+}
+
+
+
+
+
+
+
+
